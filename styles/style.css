@@ -1,0 +1,389 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    max-width: 1140px;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.section__block{   
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 67px;
+    color: black;
+    margin-bottom: 18px;
+    margin-top: 50px;
+    text-align: center;
+}
+.section__text{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #666666;
+    text-align: center;
+    width: 500px;
+    margin-bottom: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    list-style: none;
+    
+}
+a{
+    text-decoration: none;
+}
+.header__nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header__logo{
+    font-size: 30px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 5px;
+}
+.header__list{
+    display: flex;
+}
+.header__item{
+    padding: 32px 20px;
+    position: relative;
+}
+.header__link,.header__dropdown-link{
+    color: black;
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 12px;
+}
+.header__dropdown{
+    position: absolute;
+    background: white;
+    border: 1px solid #E5E5E5E5;
+    border-radius: 2px;
+    width: 160px;
+    opacity: 0;
+}
+.header__dropdown-item{
+    padding: 12px 30px;
+}
+.header__dropdown-item:nth-child(2){
+    border-top: 1px solid #E5E5E5;
+    border-bottom: 1px solid #E5E5E5;
+}
+.header__item:hover .header__dropdown{
+    opacity: 1;
+}
+.header__form{
+    display: flex;
+}
+.header__input{
+    border: 1px solid #41A28E;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    padding: 6px 12px;
+    margin-right: 4px;
+}
+.header__button{
+    width: 28px;
+    background: #41A28E;
+    border: none;
+    color: #FFFFFFFF;
+}
+
+
+/* main section intro */
+
+.intro{
+    background:url(../images/bg.png) center/cover no-repeat;
+    height: calc(100vh - 82px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.intro__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 67px;
+    color: #FFFFFFFF;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 16px 61px; 
+    margin-bottom: 30px;
+}
+.intro__text{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+    color: #FFFFFFFF;
+    margin-bottom: 50px;
+}
+.intro__link{
+    font-family: "Playfair Dispaly";
+    font-size: 12px;
+    font-weight: 400px;
+    line-height: 16px;
+    color: #000000;
+    background: #FFFFFF;
+    transition: .3s;
+    padding: 22px 35px;
+}
+.intro__link:hover{
+    background: #41A28E;
+}
+/* main section commerce */
+
+
+.commerce{
+    margin-top: 48px;
+}
+.commerce__box{
+    width: 255px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+}
+.commerce__image{
+    width: 100%;
+    height: 100%;
+}
+.commerce__text{
+    font-family: "Playfair Display";
+    font-size: 25px;
+    line-height: 33px;
+    padding: 2px 0;
+    text-align: center;
+    color: #FFFFFF;
+    background: rgba(75, 72, 72, 0.7);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; 
+    transform: translateY(100%);
+    transition: .3s;
+    text-transform: capitalize;
+}
+.commerce__box:hover .commerce__text{
+    transform: translateY(0%);
+}
+.project{
+    background: url(../images/jacket_bg.png) center/cover no-repeat;
+    height: 400px;
+}
+.project .container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.ptoject__text{
+    font-family: "Playfir Display";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #FFFFFF;
+}
+.project__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 67px;
+    margin-top: 3px;
+    color: #FFFFFF;
+    margin-bottom: 22px;
+}
+.project__button{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #000000;
+    padding: 23px 42px;
+    background: #fff;
+    border: none;  
+}
+.project__button:hover{
+    background: #41A28E;
+    transition: .3s;
+}
+
+
+/* main jacket section */
+
+.jacket__box{
+    width: 255px;
+}
+.jacket__shop{
+    width: 100%;
+    height: 340px;
+    position: relative;
+    overflow: hidden;
+}
+.jacket__image{
+    width: 100%;
+    height: 100%;
+}
+.jacket__icons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    transform: translateY(100%);
+    transition: .3s;
+}
+.jacket__shop:hover .jacket__icons{
+    transform: translateY(0%);
+}
+.jacket__cart, .jacket__like, .jacket__eye{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.jacket__cart span, .jacket__eye{
+    margin-left: 15px;
+}
+.jacket__follow{
+    display: flex;
+    align-items: center;
+}
+.jacket__info{
+    margin-top: 43px;
+}
+.jacket__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+.jacket__price{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;  
+    color: #000;
+}
+.jacket__price span{
+    color: #666666;
+    text-decoration: line-through;
+    margin-right: 15px;
+}
+.jacket__text{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #484848;
+    padding: 10px 18px;
+    color: #fff;
+    font-family: "Roboto";
+    font-size: 12px;
+}
+
+/* footer */
+
+
+.footer{
+    margin-top: 50px;
+}
+.footer__block{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__top{
+    background: #000;
+    padding: 36px 0;
+}
+.footer__box{
+    width: 255px;
+}
+.footer__title{
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 40px;
+}
+.footer__link{
+    line-height: 36px;
+    font-family: "Roboto";
+    font-weight: 100;
+    font-size: 14px;
+    color: #fff;
+}
+.footer__mail{
+    display: flex;
+    margin-bottom: 20px;
+}
+.footer__mail input{
+    padding: 14px 10px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 14px;
+    color: #000;
+    outline: none;
+}
+.footer__mail button{
+    padding: 12px 10px;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    background: #41A28E;
+    border: none;
+}
+.footer__text{
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    line-height: 16px;
+    margin-bottom: 22px;
+}
+.footer__cards i{
+    color: #fff;
+    font-size: 26px;
+    margin-right: 25px;
+}
+.footer__list i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.footer__content{
+    background: #121212;
+    padding: 40px 0;
+    text-align: center;
+}
+.footer__author{
+    color: #666666;
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+}
+.footer__author span{
+    text-shadow:0px 0px 4px #E52D27;
+}

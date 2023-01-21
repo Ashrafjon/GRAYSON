@@ -1,0 +1,45 @@
+@media(max-width:1200px){
+    .section__block, .footer__block{
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+    }
+}
+@media(max-width:992px){
+       .header__nav{
+        flex-direction: column;
+        padding: 20px;
+       }
+       .intro__title{
+        font-size: 30px;
+        padding: 10px 35px;
+        text-align: center;
+       }
+       .intro__link, .header__item, .project__button{
+        padding: 10px 15px;
+       }
+       .section__title, .project__title{
+        font-size: 30px;
+        text-align: center;
+       }
+}
+@media(max-width:576px){
+    .header__list{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .section__text{
+        width: 90%;
+    }
+    .project{
+        height: 300px;
+    }
+    .intro__title{
+        font-size: 15px;
+        padding: 0px 16px;
+    }
+    .header__dropdown{
+        z-index: 10;
+        top: 25px;
+    }
+}
